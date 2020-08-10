@@ -1,0 +1,25 @@
+{
+  "name": "user-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "env-cmd -f ./config/dev.env node src/app.js",
+    "dev": "env-cmd -f ./config/dev.env nodemon src/app.js"
+  },
+  "author": "Tanish Gupte",
+  "license": "ISC",
+  "dependencies": {
+    "argon2": "^0.26.2",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.27",
+    "morgan": "^1.10.0",
+    "validator": "^13.1.1"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "nodemon": "^2.0.4"
+  }
+}
